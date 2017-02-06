@@ -1,0 +1,12 @@
+{
+	"name": "blog",
+	"aliases": [
+		"criollo"
+	],
+	"env": {
+		"NODE_ENV": "production"
+	},
+	"engines": {
+		"node": "7.4.0"
+	}
+}
