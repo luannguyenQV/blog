@@ -1,0 +1,15 @@
+{
+  "name": "blog",
+  "description": "",
+  "dependencies": {
+    "comma-number": "^1.1.0",
+    "firebase": "^3.6.8",
+    "next": "^2.0.0-beta.23",
+    "nprogress": "^0.2.0"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
