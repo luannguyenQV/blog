@@ -14,8 +14,9 @@ export default () => (
         {`
     h1 {
         margin: 5px 0 40px 0;
-        font-size: 25px;
-        font-weight: 300;
+        font-size: 1.5rem;
+        font-weight: 200;
+        color: #454545;
       }
     `}
       </style>

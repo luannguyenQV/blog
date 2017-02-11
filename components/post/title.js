@@ -10,12 +10,13 @@ export default ({ children }) => (
       }
 
       a {
-        color: #22BAD9;
+        color: rgb(255,59,48);
         text-decoration: none;
+        font-size: 1.5rem;
       }
 
       a:hover {
-        background-color: #22BAD9;
+        background-color:  rgb(255,59,48);
         color: #fff;
       }
     `}</style>

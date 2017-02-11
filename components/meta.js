@@ -4,6 +4,7 @@ export default () => (
   <div>
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" href="/static/favicon.ico" type="image/png"></link>
     </Head>
 
     { /* global styles */ }
@@ -39,7 +40,7 @@ export default () => (
         top: 0;
         left: 0;
         width: 100%;
-        height: 2.5px;
+        height: 2.1px;
       }
 
       #nprogress .peg {

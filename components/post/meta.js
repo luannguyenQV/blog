@@ -41,7 +41,7 @@ export default class Meta extends React.Component {
         <style jsx>{`
           div {
             margin-bottom: 20px;
-            color: #777;
+            color: #999;
           }
 
           .highlight {
@@ -52,7 +52,7 @@ export default class Meta extends React.Component {
 
           @keyframes highlight {
             from {
-              background-color: yellow;
+              background-color: rgb(255,204,0);
             }
             to {
               background-color: #fff;

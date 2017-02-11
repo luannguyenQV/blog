@@ -10,8 +10,8 @@ export default () => (
     </Head>
     <div className="home">
       <div className="main">
-        <Logo />
-        <h1>Jhonny Arana</h1>
+        <div className="logo"><Logo /></div>
+        <h1>Arana Jhonny</h1>
         <nav>
           <a target="_blank" href="https://twitter.com/aranajhonny">Twitter</a>
           <a target="_blank" href="https://github.com/aranajhonny">Github</a>
@@ -42,9 +42,10 @@ export default () => (
       }
 
       h1 {
-        font-size: 16px;
-        font-weight: normal;
-        color: #000;
+        margin: 0;
+        font-size: 1.8rem;
+        font-weight: 200;
+        color: #454545;
       }
 
       nav {
@@ -53,7 +54,7 @@ export default () => (
 
       a {
         display: inline-block;
-        margin: 0 15px;
+        margin: 20px 20px 0 20px;
         text-decoration: none;
       }
     `}

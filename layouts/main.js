@@ -10,8 +10,7 @@ Router.onRouteChangeError = () => NProgress.done()
 export default ({ children }) => (
   <div className="main">
     <div className="logo">
-      <Link href="https://criollo.now.sh"><a>Home</a></Link>
-      <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto' />
+      <Link href={'/'}><a>Home</a></Link>
       {' ('}
       <a href={`https://github.com/aranajhonny/blog`} target="_blank">src</a>
       {')'}
