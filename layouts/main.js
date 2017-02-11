@@ -12,8 +12,9 @@ export default ({ children }) => (
     <div className="logo">
       <Link href="https://criollo.now.sh"><a>Home</a></Link>
       <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto' />
-      {' '}
-      <a href={`https://github.com/aranajhonny/blog`} target="_blank">( src )</a>
+      {' ('}
+      <a href={`https://github.com/aranajhonny/blog`} target="_blank">src</a>
+      {')'}
     </div>
 
     { children }

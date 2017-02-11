@@ -1,28 +1,27 @@
-import Page from '../layouts/main'
-import Link from 'next/prefetch'
-import Head from 'next/head'
-import Logo from '../static/white.svg'; 
+import Page from "../layouts/main";
+import Link from "next/prefetch";
+import Head from "next/head";
+import Logo from "../static/white.svg";
 
 export default () => (
   <Page>
     <Head>
       <title>Jhonny Arana</title>
     </Head>
-
     <div className="home">
       <div className="main">
-        <Logo /> 
+        <Logo />
         <h1>Jhonny Arana</h1>
         <nav>
           <a target="_blank" href="https://twitter.com/aranajhonny">Twitter</a>
           <a target="_blank" href="https://github.com/aranajhonny">Github</a>
-          <Link href="/blog"><a>Blog</a></Link>
+          <Link href="/blog"><a>Thoughts</a></Link>
           <a href="mailto:jhonnyjosearana@gmail.com">Email</a>
         </nav>
       </div>
     </div>
-
-    <style jsx>{`
+    <style jsx>
+      {`
       .home {
         position: absolute;
         top: 0;
@@ -57,6 +56,7 @@ export default () => (
         margin: 0 15px;
         text-decoration: none;
       }
-    `}</style>
+    `}
+    </style>
   </Page>
 )
