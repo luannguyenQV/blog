@@ -1,9 +1,12 @@
 {
 	"name": "blog",
 	"aliases": [
-		"criollo"
+		"criollo.now.sh"
 	],
 	"env": {
 		"NODE_ENV": "production"
+	},
+	"engines": {
+  		"node": "7.4.0"
 	}
 }
