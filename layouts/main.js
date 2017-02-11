@@ -11,42 +11,13 @@ export default ({ children }) => (
   <div className="main">
     <div className="logo">
       <Link href="https://criollo.now.sh"><a>Home</a></Link>
+      <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto' />
       {' '}
       <a href={`https://github.com/aranajhonny/blog`} target="_blank">( src )</a>
     </div>
 
     { children }
-
-    { /* global styles and meta tags */ }
     <Meta />
-    <style jsx global >{`
-      /* loading progress bar styles */
-      #nprogress {
-        pointer-events: none;
-      }
-
-      #nprogress .bar {
-        background: #ff2d55;
-        position: fixed;
-        z-index: 1031;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-      }
-
-      #nprogress .peg {
-        display: block;
-        position: absolute;
-        right: 0px;
-        width: 100px;
-        height: 100%;
-        box-shadow: 0 0 10px #ff2d55, 0 0 5px #ff2d55;
-        opacity: 1.0;
-        transform: rotate(3deg) translate(0px, -4px);
-      }
-      `}</style>
-    { /* local styles */ }
     <style jsx>{`
       .main {
         padding: 25px 50px;
