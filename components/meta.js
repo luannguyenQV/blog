@@ -18,13 +18,13 @@ export default () => (
       }
 
       a {
-        color: #FF2E88;
+        color: #ff2d55;
         -webkit-tap-highlight-color: rgba(0,0,0,0);
       }
 
       a:hover {
         color: #fff;
-        background: #FF2E88;
+        background: #ff2d55;
         text-decoration: none;
       }
     `}</style>

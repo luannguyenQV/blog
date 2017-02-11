@@ -1,6 +1,7 @@
 import Page from '../layouts/main'
 import Link from 'next/prefetch'
 import Head from 'next/head'
+import Logo from '../static/white.svg'; 
 
 export default () => (
   <Page>
@@ -10,7 +11,7 @@ export default () => (
 
     <div className="home">
       <div className="main">
-        <img src="/static/logo.png" alt="Nuxt.js Logo" class="logo" />
+        <Logo /> 
         <h1>Jhonny Arana</h1>
         <nav>
           <a target="_blank" href="https://twitter.com/aranajhonny">Twitter</a>
@@ -32,7 +33,7 @@ export default () => (
         align-items: center;
         justify-content: center;
         z-index: -1;
-        background: black;
+        background: #fff;
         
       }
 
@@ -42,9 +43,9 @@ export default () => (
       }
 
       h1 {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: normal;
-        color: #fff;
+        color: #000;
       }
 
       nav {

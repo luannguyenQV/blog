@@ -10,7 +10,7 @@ Router.onRouteChangeError = () => NProgress.done()
 export default ({ children }) => (
   <div className="main">
     <div className="logo">
-      <Link href="https://jhonny.now.sh"><a>Home</a></Link>
+      <Link href="https://criollo.now.sh"><a>Home</a></Link>
       {' '}
       <a href={`https://github.com/aranajhonny/blog`} target="_blank">( src )</a>
     </div>
@@ -26,7 +26,7 @@ export default ({ children }) => (
       }
 
       #nprogress .bar {
-        background: #FF2E88;
+        background: #ff2d55;
         position: fixed;
         z-index: 1031;
         top: 0;
@@ -41,7 +41,7 @@ export default ({ children }) => (
         right: 0px;
         width: 100px;
         height: 100%;
-        box-shadow: 0 0 10px #FF2E88, 0 0 5px #FF2E88;
+        box-shadow: 0 0 10px #ff2d55, 0 0 5px #ff2d55;
         opacity: 1.0;
         transform: rotate(3deg) translate(0px, -4px);
       }
