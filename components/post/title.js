@@ -1,7 +1,9 @@
 export default ({ children }) => (
   <h1>
-    <a href="#">{ children }</a>
-    <style jsx>{`
+    <a href="#">{children}</a>
+    <style jsx>
+      {
+        `
       h1 {
         font: 18px Helvetica Neue, Helvetica,
           Arial, "Lucida Grande", sans-serif;
@@ -19,6 +21,8 @@ export default ({ children }) => (
         background-color:  rgb(255,59,48);
         color: #fff;
       }
-    `}</style>
+    `
+      }
+    </style>
   </h1>
-)
+);

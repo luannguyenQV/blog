@@ -1,9 +1,11 @@
-import P from './paragraph'
+import P from "./paragraph";
 
 export const FootNotes = ({ children }) => (
   <div>
-    { children }
-    <style jsx>{`
+    {children}
+    <style jsx>
+      {
+        `
       div::before {
         width: 200px;
         content: ' ';
@@ -13,35 +15,45 @@ export const FootNotes = ({ children }) => (
         display: block;
         margin-top: 40px;
       }
-    `}</style>
+    `
+      }
+    </style>
   </div>
-)
+);
 
 export const Ref = ({ id }) => (
   <a href={`#f${id}`} id={`s${id}`}>
-    [{ id }]
-    <style jsx>{`
+    [{id}]
+    <style jsx>
+      {
+        `
       a {
         top: -5px;
         font-size: 10px;
         position: relative;
         text-decoration: none;
       }
-    `}</style>
+    `
+      }
+    </style>
   </a>
-)
+);
 
 export const Note = ({ id, children }) => (
   <P>
-    { id }.
-    {' '}
+    {id}.
+    {" "}
     <a href={`#s${id}`} id={`f${id}`}>^</a>
-    {' '}
-    { children }
-    <style jsx>{`
+    {" "}
+    {children}
+    <style jsx>
+      {
+        `
       a {
         text-decoration: none;
       }
-    `}</style>
+    `
+      }
+    </style>
   </P>
-)
+);

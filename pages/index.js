@@ -21,7 +21,8 @@ export default () => (
       </div>
     </div>
     <style jsx>
-      {`
+      {
+        `
       .home {
         position: absolute;
         top: 0;
@@ -57,7 +58,8 @@ export default () => (
         margin: 20px 20px 0 20px;
         text-decoration: none;
       }
-    `}
+    `
+      }
     </style>
   </Page>
-)
+);

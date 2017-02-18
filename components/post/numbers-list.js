@@ -1,27 +1,34 @@
 export default ({ children }) => (
   <ul>
-    { children }
-    <style jsx>{`
+    {children}
+    <style jsx>
+      {
+        `
       ul {
         margin: 0 0 20px 0;
         padding: 0;
         list-style: inside decimal;
       }
-    `}</style>
+    `
+      }
+    </style>
   </ul>
-)
+);
 
 const LI = ({ children }) => (
   <li>
-    { children }
-    <style jsx>{`
+    {children}
+    <style jsx>
+      {
+        `
       li {
         margin-bottom: 5px;
         line-height: 24px;
       }
-    `}</style>
+    `
+      }
+    </style>
   </li>
-)
+);
 
-export { LI }
-
+export { LI };

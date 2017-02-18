@@ -9,8 +9,20 @@
     "nprogress": "^0.2.0"
   },
   "scripts": {
+    "lint:staged": "lint-staged",
     "dev": "next",
     "build": "next build",
     "start": "next start"
+  },
+   "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "pre-commit": "lint:staged",
+  "devDependencies": {
+    "lint-staged": "^3.3.0",
+    "pre-commit": "^1.2.2"
   }
 }

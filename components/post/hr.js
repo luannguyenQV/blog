@@ -1,6 +1,8 @@
 export default () => (
   <div>
-    <style jsx>{`
+    <style jsx>
+      {
+        `
       div {
         border-style: none;
         margin-top: 30px;
@@ -13,6 +15,8 @@ export default () => (
         text-align: center;
         display: inline;
       }
-    `}</style>
+    `
+      }
+    </style>
   </div>
-)
+);

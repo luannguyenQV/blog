@@ -1,7 +1,9 @@
 export default ({ children }) => (
   <pre>
-    <code>{ children }</code>
-    <style jsx>{`
+    <code>{children}</code>
+    <style jsx>
+      {
+        `
       pre {
         line-height: 20px;
         margin-bottom: 20px;
@@ -11,6 +13,8 @@ export default ({ children }) => (
       code {
         color: #999;
       }
-    `}</style>
+    `
+      }
+    </style>
   </pre>
-)
+);

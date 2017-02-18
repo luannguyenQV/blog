@@ -1,22 +1,30 @@
-import Page from './main'
+import Page from "./main";
 
 export default ({ children }) => (
   <Page>
     <article>
-      { children }
+      {children}
     </article>
-    <style jsx>{`
+    <style jsx>
+      {
+        `
       article {
         max-width: 650px;
         margin: auto;
         font-size: 14px;
       }
-    `}</style>
-    <style jsx global>{`
+    `
+      }
+    </style>
+    <style jsx global>
+      {
+        `
       body {
         width: 100%;
         overflow-x: hidden;
       }
-    `}</style>
+    `
+      }
+    </style>
   </Page>
-)
+);

@@ -1,44 +1,47 @@
-import format from 'comma-number'
-import React from 'react'
+import format from "comma-number";
+import React from "react";
 
 export default class Meta extends React.Component {
-
-  constructor (props) {
-    super(props)
+  constructor(props) {
+    super(props);
     this.state = {
       highlight: false
-    }
+    };
   }
 
-  componentWillReceiveProps (nextProps) {
+  componentWillReceiveProps(nextProps) {
     if (this.props.views !== nextProps.views) {
-      if (this.raf) return
+      if (this.raf) return;
       if (this.state.highlight) {
         // reset the animation
         this.setState({ highlight: false }, () => {
           this.raf = requestAnimationFrame(() => {
-            this.raf = null
-            this.setState({ highlight: true })
-          })
-        })
+            this.raf = null;
+            this.setState({ highlight: true });
+          });
+        });
       } else {
-        this.setState({ highlight: true })
+        this.setState({ highlight: true });
       }
     }
   }
 
-  render () {
-    const { date, views } = this.props
-    const { highlight } = this.state
+  render() {
+    const { date, views } = this.props;
+    const { highlight } = this.state;
     return (
       <div>
-        { date } – {' '}
+        {date} – {" "}
         {
-          <span className={ highlight && 'highlight' }>
-            { format(views) } views
-          </span>
+          (
+            <span className={highlight && "highlight"}>
+              {format(views)} views
+            </span>
+          )
         }
-        <style jsx>{`
+        <style jsx>
+          {
+            `
           div {
             margin-bottom: 20px;
             color: #999;
@@ -58,8 +61,10 @@ export default class Meta extends React.Component {
               background-color: #fff;
             }
           }
-        `}</style>
+        `
+          }
+        </style>
       </div>
-    )
+    );
   }
 }

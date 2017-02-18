@@ -1,14 +1,16 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 export default () => (
   <div>
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" href="/static/favicon.ico" type="image/png"></link>
+      <link rel="icon" href="/static/favicon.ico" type="image/png" />
     </Head>
 
-    { /* global styles */ }
-    <style jsx global>{`
+    {/* global styles */}
+    <style jsx global>
+      {
+        `
       * {
         margin: 0;
         box-sizing: border-box;
@@ -53,6 +55,8 @@ export default () => (
         opacity: 1.0;
         transform: rotate(3deg) translate(0px, -4px);
       }
-    `}</style>
+    `
+      }
+    </style>
   </div>
-)
+);

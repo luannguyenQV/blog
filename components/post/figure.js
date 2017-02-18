@@ -1,14 +1,13 @@
-export default ({ desc, href, children, wide  }) => (
-  <div className={ wide && 'wide' }>
-    { href
-        ? <a href={ href } target="_blank">{ children }</a>
-        : children }
-    {
-      desc && <p>
-        { desc }
-      </p>
-    }
-    <style jsx>{`
+export default ({ desc, href, children, wide }) => (
+  <div className={wide && "wide"}>
+    {href ? <a href={href} target="_blank">{children}</a> : children}
+    {desc &&
+      <p>
+        {desc}
+      </p>}
+    <style jsx>
+      {
+        `
       div {
         text-align: center;
         margin-bottom: 20px;
@@ -36,32 +35,42 @@ export default ({ desc, href, children, wide  }) => (
         background: #F2F2F2;
         z-index: -1;
       }
-    `}</style>
+    `
+      }
+    </style>
   </div>
-)
+);
 
 const Image = ({ width, src }) => (
   <div>
     <img width={width} src={src} />
-    <style jsx>{`
+    <style jsx>
+      {
+        `
       img {
         max-width: 100%;
         margin: 15px 0;
       }
-    `}</style>
+    `
+      }
+    </style>
   </div>
-)
+);
 
 const Video = ({ src }) => (
   <div>
     <video autoPlay loop src={src} />
-    <style jsx>{`
+    <style jsx>
+      {
+        `
       video {
         max-width: 100%;
         margin: 15px 0;
       }
-    `}</style>
+    `
+      }
+    </style>
   </div>
-)
+);
 
-export { Image, Video }
+export { Image, Video };

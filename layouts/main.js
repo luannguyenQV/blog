@@ -1,24 +1,26 @@
-import Meta from '../components/meta'
-import Link from 'next/prefetch'
-import NProgress from 'nprogress'
-import Router from 'next/router'
+import Meta from "../components/meta";
+import Link from "next/prefetch";
+import NProgress from "nprogress";
+import Router from "next/router";
 
-Router.onRouteChangeStart = () => NProgress.start()
-Router.onRouteChangeComplete = () => NProgress.done()
-Router.onRouteChangeError = () => NProgress.done()
+Router.onRouteChangeStart = () => NProgress.start();
+Router.onRouteChangeComplete = () => NProgress.done();
+Router.onRouteChangeError = () => NProgress.done();
 
 export default ({ children }) => (
   <div className="main">
     <div className="logo">
-      <Link href={'/'}><a>Home</a></Link>
-      {' ('}
+      <Link href={"/"}><a>Home</a></Link>
+      {" ("}
       <a href={`https://github.com/aranajhonny/blog`} target="_blank">src</a>
-      {')'}
+      {")"}
     </div>
 
-    { children }
+    {children}
     <Meta />
-    <style jsx>{`
+    <style jsx>
+      {
+        `
       .main {
         padding: 25px 50px;
       }
@@ -40,6 +42,8 @@ export default ({ children }) => (
           padding-bottom: 20px;
         }
       }
-    `}</style>
+    `
+      }
+    </style>
   </div>
-)
+);

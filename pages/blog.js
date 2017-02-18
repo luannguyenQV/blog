@@ -11,34 +11,33 @@ export default () => (
     <div>
       <h1>{`Essays & Thoughts`}</h1>
       <style jsx>
-        {`
+        {
+          `
     h1 {
         margin: 5px 0 40px 0;
         font-size: 1.5rem;
         font-weight: 200;
         color: #454545;
       }
-    `}
+    `
+        }
       </style>
     </div>
     <div className="posts">
-      {
-        posts.map(
-          ({ id, date, title }) => (
-            <Post id={id} key={id} date={date} title={title} />
-          )
-        )
-      }
+      {posts.map(({ id, date, title }) => (
+        <Post id={id} key={id} date={date} title={title} />
+      ))}
     </div>
   </Page>
-)
+);
 
 const Post = ({ id, date, title }) => (
   <div className="post">
     <span className="date">{date}</span>
     <Link href={`/${new Date(date).getFullYear()}/${id}`}><a>{title}</a></Link>
     <style jsx>
-      {`
+      {
+        `
       .post {
         margin-bottom: 10px;
       }
@@ -69,7 +68,8 @@ const Post = ({ id, date, title }) => (
           margin-bottom: 5px;
         }
       }
-    `}
+    `
+      }
     </style>
   </div>
 );
