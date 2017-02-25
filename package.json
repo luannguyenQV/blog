@@ -1,6 +1,7 @@
 {
   "name": "blog",
   "description": "my personal blog",
+  "version": "1.0.0",
   "dependencies": {
     "babel-plugin-inline-react-svg": "^0.2.0",
     "comma-number": "^1.1.0",
