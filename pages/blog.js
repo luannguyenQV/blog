@@ -1,5 +1,5 @@
 import Page from "../layouts/main";
-import Link from "next/prefetch";
+import Link from "next/link";
 import { posts } from "./post";
 import Head from "next/head";
 
@@ -34,7 +34,9 @@ export default () => (
 const Post = ({ id, date, title }) => (
   <div className="post">
     <p className="date">{date}</p>
-    <Link href={`/${new Date(date).getFullYear()}/${id}`}><a>{title}</a></Link>
+    <Link prefetch href={`/${new Date(date).getFullYear()}/${id}`}>
+      <a>{title}</a>
+    </Link>
     <style jsx>
       {
         `

@@ -1,5 +1,5 @@
 import Page from "../layouts/main";
-import Link from "next/prefetch";
+import Link from "next/link";
 import Head from "next/head";
 import Logo from "../static/white.svg";
 
@@ -15,7 +15,7 @@ export default () => (
         <nav>
           <a target="_blank" href="https://twitter.com/aranajhonny">Twitter</a>
           <a target="_blank" href="https://github.com/aranajhonny">Github</a>
-          <Link href="/blog"><a>Thoughts</a></Link>
+          <Link prefetch href="/blog"><a>Thoughts</a></Link>
           <a href="mailto:jhonnyjosearana@gmail.com">Email</a>
         </nav>
       </div>
