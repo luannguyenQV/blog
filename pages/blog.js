@@ -33,7 +33,7 @@ export default () => (
 
 const Post = ({ id, date, title }) => (
   <div className="post">
-    <span className="date">{date}</span>
+    <p className="date">{date}</p>
     <Link href={`/${new Date(date).getFullYear()}/${id}`}><a>{title}</a></Link>
     <style jsx>
       {
