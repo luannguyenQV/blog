@@ -2,7 +2,6 @@ import Page from "../layouts/main";
 import Link from "next/link";
 import Head from "next/head";
 import Logo from "../static/white.svg";
-
 export default () => (
   <Page>
     <Head>
