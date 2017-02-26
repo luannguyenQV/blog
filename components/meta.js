@@ -18,6 +18,7 @@ export default () => (
 
       body {
         font: 14px monospace;
+	background: #fff;
       }
 
       a {
