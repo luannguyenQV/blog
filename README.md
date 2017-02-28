@@ -1,1 +1,1 @@
-Blog - jhonny.now.sh
+Blog - criollo.now.sh [![Build Status](https://travis-ci.org/aranajhonny/blog.svg?branch=master)](https://travis-ci.org/aranajhonny/blog)
