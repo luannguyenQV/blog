@@ -3,3 +3,4 @@ node_modules
 yarn.lock
 package.json
 yarn-error.log
+.next
