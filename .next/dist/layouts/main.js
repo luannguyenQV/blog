@@ -4,11 +4,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _style = require("styled-jsx/style.js");
+var _style = require(
+  "/Users/Jhonny/devcriollo/blog/node_modules/styled-jsx/style.js"
+);
 
 var _style2 = _interopRequireDefault(_style);
 
-var _react = require("react");
+var _react = require(
+  "/Users/Jhonny/devcriollo/blog/node_modules/next/node_modules/react/react.js"
+);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -16,7 +20,9 @@ var _meta = require("../components/meta");
 
 var _meta2 = _interopRequireDefault(_meta);
 
-var _link = require("next/dist/lib/link.js");
+var _link = require(
+  "/Users/Jhonny/devcriollo/blog/node_modules/next/dist/lib/link.js"
+);
 
 var _link2 = _interopRequireDefault(_link);
 
@@ -24,7 +30,9 @@ var _nprogress = require("nprogress");
 
 var _nprogress2 = _interopRequireDefault(_nprogress);
 
-var _index = require("next/dist/lib/router/index.js");
+var _index = require(
+  "/Users/Jhonny/devcriollo/blog/node_modules/next/dist/lib/router/index.js"
+);
 
 var _index2 = _interopRequireDefault(_index);
 

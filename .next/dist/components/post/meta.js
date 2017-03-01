@@ -4,31 +4,41 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getPrototypeOf = require("babel-runtime/core-js/object/get-prototype-of");
+var _getPrototypeOf = require(
+  "/Users/Jhonny/devcriollo/blog/node_modules/babel-runtime/core-js/object/get-prototype-of"
+);
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = require("babel-runtime/helpers/classCallCheck");
+var _classCallCheck2 = require(
+  "/Users/Jhonny/devcriollo/blog/node_modules/babel-runtime/helpers/classCallCheck"
+);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = require("babel-runtime/helpers/createClass");
+var _createClass2 = require(
+  "/Users/Jhonny/devcriollo/blog/node_modules/babel-runtime/helpers/createClass"
+);
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
 var _possibleConstructorReturn2 = require(
-  "babel-runtime/helpers/possibleConstructorReturn"
+  "/Users/Jhonny/devcriollo/blog/node_modules/babel-runtime/helpers/possibleConstructorReturn"
 );
 
 var _possibleConstructorReturn3 = _interopRequireDefault(
   _possibleConstructorReturn2
 );
 
-var _inherits2 = require("babel-runtime/helpers/inherits");
+var _inherits2 = require(
+  "/Users/Jhonny/devcriollo/blog/node_modules/babel-runtime/helpers/inherits"
+);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _style = require("styled-jsx/style.js");
+var _style = require(
+  "/Users/Jhonny/devcriollo/blog/node_modules/styled-jsx/style.js"
+);
 
 var _style2 = _interopRequireDefault(_style);
 
@@ -36,7 +46,9 @@ var _commaNumber = require("comma-number");
 
 var _commaNumber2 = _interopRequireDefault(_commaNumber);
 
-var _react = require("react");
+var _react = require(
+  "/Users/Jhonny/devcriollo/blog/node_modules/next/node_modules/react/react.js"
+);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -108,13 +120,12 @@ var Meta = (function(_React$Component) {
           ),
           _react2.default.createElement(_style2.default, {
             styleId: 1204030124,
-            css: 'div[data-jsx="1204030124"] {margin-bottom: 20px;color: #999;}.highlight[data-jsx="1204030124"] {-webkit-animation-name:a1204030124highlight;-moz-animation-name:a1204030124highlight;animation-name:a1204030124highlight;-webkit-animation-duration:1s;-moz-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;animation-fill-mode:forwards;}@-webkit-keyframes a1204030124highlight {from {background-color: rgb(255,204,0);}to {background-color: #fff;}}@-moz-keyframes a1204030124highlight {from {background-color: rgb(255,204,0);}to {background-color: #fff;}}@keyframes a1204030124highlight {from {background-color: rgb(255,204,0);}to {background-color: #fff;}}'
+            css: 'div[data-jsx="1204030124"] {margin-bottom: 20px;color: #999;}.highlight[data-jsx="1204030124"] {-webkit-animation-name:a1204030124highlight;-moz-animation-name:a1204030124highlight;animation-name:a1204030124highlight;-webkit-animation-duration: 1s;-moz-animation-duration: 1s;animation-duration: 1s;-webkit-animation-fill-mode: forwards;-moz-animation-fill-mode: forwards;animation-fill-mode: forwards;}@-webkit-keyframes a1204030124highlight {from {background-color: rgb(255,204,0);}to {background-color: #fff;}}@-moz-keyframes a1204030124highlight {from {background-color: rgb(255,204,0);}to {background-color: #fff;}}@keyframes a1204030124highlight {from {background-color: rgb(255,204,0);}to {background-color: #fff;}}'
           })
         );
       }
     }
   ]);
-
   return Meta;
 })(_react2.default.Component);
 

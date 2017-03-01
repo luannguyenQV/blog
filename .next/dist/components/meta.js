@@ -4,15 +4,21 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _style = require("styled-jsx/style.js");
+var _style = require(
+  "/Users/Jhonny/devcriollo/blog/node_modules/styled-jsx/style.js"
+);
 
 var _style2 = _interopRequireDefault(_style);
 
-var _react = require("react");
+var _react = require(
+  "/Users/Jhonny/devcriollo/blog/node_modules/next/node_modules/react/react.js"
+);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _head = require("next/dist/lib/head.js");
+var _head = require(
+  "/Users/Jhonny/devcriollo/blog/node_modules/next/dist/lib/head.js"
+);
 
 var _head2 = _interopRequireDefault(_head);
 
