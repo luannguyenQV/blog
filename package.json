@@ -12,6 +12,7 @@
     "react": "^16.0.0-alpha.3",
     "react-dom": "^16.0.0-alpha.3"
   },
+  "alias": "criollo",
   "scripts": {
     "test": "prettier --write pages/**/*.js",
     "lint:staged": "lint-staged",
