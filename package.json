@@ -15,11 +15,11 @@
   },
   "alias": "criollo.now.sh",
   "scripts": {
-    "deploy": "rimraf .next/ && now",
+    "deploy": "now",
     "test": "prettier --write pages/**/*.js components/**/.js lib/**/*.js layouts/**/*.js server.js",
     "lint": "npm run test",
-    "dev": "rimraf .next/ && npm run test && node server.js",
-    "build": "rimraf .next/ && npm run test && next build",
+    "dev": "node server.js",
+    "build": "next build",
     "start": "NODE_ENV=production node server.js"
   },
   "precommit": "npm run lint",
