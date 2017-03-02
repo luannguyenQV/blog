@@ -15,6 +15,7 @@
   },
   "alias": "criollo.now.sh",
   "scripts": {
+    "deploy": "rimraf .next/ && now",
     "test": "prettier --write pages/**/*.js",
     "lint:staged": "lint-staged",
     "dev": "rimraf .next/ && next",
