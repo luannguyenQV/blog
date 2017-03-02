@@ -1,6 +1,5 @@
 {
 	"name": "blog",
-  "alias": "criollo",
 	"env": {
 		"NODE_ENV": "production"
 	},
